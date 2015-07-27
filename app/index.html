@@ -39,6 +39,11 @@
         <h1>'Allo, 'Allo!</h1>
         <p class="lead">Always a pleasure scaffolding your apps.</p>
         <p><a class="btn btn-lg btn-success" href="#">Splendid!</a></p>
+        <div id="buttons">
+          <label> <input id="query" value='cats' type="text"/><button id="search-button" disabled onclick="search()">Search</button></label>
+        </div>
+        <div id="search-container">
+        </div>
       </div>
 
       <div class="row marketing">
@@ -91,6 +96,9 @@
         <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy.js"></script>
         <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js"></script>
         <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js"></script>
+        <script src="auth.js"></script>
+        <script src="playlist_updates.js"></script>
+        <script src="https://apis.google.com/js/client.js?onload=googleApiClientReady"></script>
         <!-- endbuild -->
 
         <!-- build:js scripts/main.js -->
